@@ -5,7 +5,7 @@ import { MathUtils, Vector3 } from 'three'
 
 export function Card({ position, number, flipped, onPointerDown }) {
   const groupRef = useRef()
-  const texture = useTexture(`/textures/${number}.png`)
+  const texture = useTexture(`textures/${number}.png`)
   const [targetPosition] = useState(() => new Vector3())
 
   const speed = useMemo(() => 0.07 + Math.random() * 0.05, [])
