@@ -99,10 +99,7 @@ export function CardGrid({ resetTick, onReset }) {
 
         {isGameClear && (
         <div className="clear-message">
-          <h1> 🎊 </h1>
-          <p style={{ fontSize: '24px', color: '#5d5d5d' }}>
-             全部そろいました👏
-          </p>
+          <h1> 🎊 👏👏</h1>
           <p style={{ fontSize: '24px', color: '#be185d', marginTop: '10px' }}>
             ⏱：{time}秒
           </p>

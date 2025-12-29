@@ -27,7 +27,7 @@ body, html {
   transform: translate(-50%, -50%);
   text-align: center;
   background: rgba(255, 255, 255, 0.95);
-  padding: 30px 40px;
+  padding: 10px;
   width: 85%;           /* スマホ画面の85%の幅を使う */
   max-width: 400px;     /* PCなどの大画面では広がりすぎないように制限 */
   border-radius: 30px;
