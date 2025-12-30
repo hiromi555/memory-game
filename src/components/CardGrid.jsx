@@ -106,7 +106,6 @@ export function CardGrid({ resetTick, onReset }) {
         </div>
       )}
 
-
       </Html>
 
       {isGameClear && (

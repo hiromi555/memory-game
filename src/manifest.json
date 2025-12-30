@@ -1,0 +1,6 @@
+{
+  "name": "Memory Game",
+  "short_name": "ページ",
+  "start_url": ".",
+  "display": "standalone"
+}
