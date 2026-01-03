@@ -27,6 +27,7 @@ export function CardGrid({ resetTick, onReset }) {
   const [flippedIndices, setFlippedIndices] = useState([])
   const [matchedIndices, setMatchedIndices] = useState([])
   const [isProcessing, setIsProcessing] = useState(false)
+  const [mistakeCount, setMistakeCount] = useState(0)
   const { width, height } = useWindowSize()
   const isGameClear = matchedIndices.length === 20
 
@@ -38,6 +39,7 @@ export function CardGrid({ resetTick, onReset }) {
       setMatchedIndices([])
       setIsProcessing(false)
       setShuffledNumbers(shuffle(generatePairs()))
+      setMistakeCount(0)
     }
   }, [resetTick])
 
@@ -71,6 +73,7 @@ export function CardGrid({ resetTick, onReset }) {
         setFlippedIndices([])
         setIsProcessing(false)
       } else {
+        setMistakeCount(prev => prev + 1)
         setTimeout(() => {
           setFlippedIndices([])
           setIsProcessing(false)
@@ -103,6 +106,7 @@ export function CardGrid({ resetTick, onReset }) {
           <p style={{ fontSize: '24px', color: '#be185d', marginTop: '10px' }}>
             ⏱：{time}秒
           </p>
+          <p>🥺 ミス：{mistakeCount}回</p>
         </div>
       )}
 
