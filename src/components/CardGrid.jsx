@@ -70,7 +70,7 @@ export function CardGrid({ resetTick, onReset }) {
   useEffect(() => {
     if (isGameClear) {
       // 1. 絵文字の形（シェイプ）を作成する関数
-      const scalar = 4; // 絵文字の大きさ倍率（2〜4くらいがおすすめ）
+      const scalar = 3; // 絵文字の大きさ倍率（2〜4くらいがおすすめ）
       const emojiShape = (emoji) => confetti.shapeFromText({ text: emoji, scalar });
 
       // 2. 飛ばしたい絵文字を定義
